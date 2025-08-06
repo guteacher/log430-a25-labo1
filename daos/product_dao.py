@@ -29,6 +29,9 @@ class ProductDAO:
 
     def delete(self, user_id):
         pass
+
+    def delete_all(self): #optionnel
+        pass
         
     def close(self):
         self.cursor.close()

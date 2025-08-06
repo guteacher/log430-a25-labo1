@@ -82,6 +82,8 @@ Implémentez les mêmes méthodes :
 
 > 💡 La structure du modèle `User` est déjà définie dans `models/user.py`. Utilisez le même modèle pour MongoDB.
 
+Modifiez `test_user.py` pour utiliser `UserDAOMongo` en lieu de `UserDAO`, puis relancez les tests. Une implémentation correcte doit produire les mêmes résultats, en considérant que quelques ajustements mineurs dans les tests peuvent être nécessaires pour assurer l’interchangeabilité des DAO.
+
 ### 3. Nouveau tableau : Products
 Insérez le code SQL pour créer le tableau `products` dans `db-init/init.sql`. Ce fichier sera executé a chaque fois qu'on démarre la conteneur.
 ```sql
