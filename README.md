@@ -12,14 +12,14 @@
 
 ## ⚙️ Setup
 
-### 1. Faire un fork et cloner le dépôt GitLab
+### 1. Faites un fork et clonez le dépôt GitLab
 
 ```bash
 git clone https://github.com/guteacher/log430-a25-labo1
 cd log430-a25-labo1
 ```
 
-### 2. Lancer le conteneur Docker
+### 2. Lancez le conteneur Docker
 
 ```bash
 docker compose up -d
@@ -31,7 +31,7 @@ Vérifie que le conteneur est bien lancé :
 docker ps
 ```
 
-### 3. Créer un environnement virtuel Python sur ta machine (pas dans Docker)
+### 3. Créez un environnement virtuel Python sur votre ordinateur (pas dans Docker)
 
 #### Sur Linux/Mac
 ```bash
@@ -46,13 +46,13 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser # Si néces
 .venv\labo0\Scripts\activate.ps1
 ```
 
-### 4. Installer les dépendances Python
+### 4. Installez les dépendances Python
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 5. Lancer l’application
+### 5. Lancez l’application
 
 ```bash
 python app.py
@@ -114,9 +114,8 @@ Si tous les tests passent ✅, vos implémentations sont correctes.
 
 ## 📦 Livrables
 
-À remettre sur Moodle :
-
-- Une archive `.zip` contenant le code source du projet complété.
+- Fichier `.zip` contenant :
+  - l'ensemble du code source du projet Labo 01
 
 - Un **rapport en PDF** , contenant :
   - Une brève explication de votre structure MVC.
