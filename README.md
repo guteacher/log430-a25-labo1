@@ -80,9 +80,9 @@ Implémentez les mêmes méthodes :
    - `update(user)`
    - `delete(user_id)`
 
-> 💡 La structure du modèle `User` est déjà définie dans `models/user.py`. Utilisez le même modèle pour MongoDB.
-
 Modifiez `test_user.py` pour utiliser `UserDAOMongo` en lieu de `UserDAO`, puis relancez les tests. Une implémentation correcte doit produire les mêmes résultats, en considérant que quelques ajustements mineurs dans les tests peuvent être nécessaires pour assurer l’interchangeabilité des DAO.
+
+> 💡 Réfléchissez : quels sont les avantages de placer le code d’accès à la base de données dans une DAO plutôt que, par exemple, dans un modèle, un contrôleur ou d’autres classes ?
 
 ### 3. Nouveau tableau : Products
 Insérez le code SQL pour créer le tableau `products` dans `db-init/init.sql`. Ce fichier sera executé a chaque fois qu'on démarre la conteneur.
@@ -95,7 +95,10 @@ CREATE TABLE IF NOT EXISTS products (
 );
 ```
 
-Créez un nouvel model, view, controller et DAO pour `Product`. Utilisez une structure similaire à `User`. Ajoutez les options `Montrer la liste d'items` et `Ajouter un item` dans `app.py`.
+Créez un nouvel Model, View, Controller et DAO pour `Product`. Utilisez une structure similaire à `User`. Ajoutez les options `Montrer la liste d'items` et `Ajouter un item` dans `app.py`.
+
+> 💡 Réfléchissez : si nous devions créer un système de magasin capable de faire la gestion d'achats des utilisateurs (Products et Users), comment structurerions-nous nos données dans MySQL par rapport à MongoDB ?
+
 
 ### ✅ Correction des activités
 
