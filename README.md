@@ -116,6 +116,7 @@ Si tous les tests passent ✅, vos implémentations sont correctes.
 
 - Fichier `.zip` contenant :
   - l'ensemble du code source du projet Labo 01
+  - 5 diagrammes UML de l'application (use case, classes, sequence, activity, deployment)
 
 - Un **rapport en PDF** , contenant :
   - Une brève explication de votre structure MVC.
