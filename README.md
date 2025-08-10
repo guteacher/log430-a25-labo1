@@ -71,6 +71,9 @@ Complétez cette DAO en y ajoutant :
    - `update(user)` – pour modifier un utilisateur existant.
    - `delete(user_id)` – pour supprimer un utilisateur.
 
+> 💡 Il existe plusieurs manières d’implémenter une DAO. Par exemple, nous pourrions placer les opérations de base de données directement dans la classe Model.
+Dans notre cas, nous conservons la DAO et le Model séparés, comme décrit dans les ouvrages suivants : Documenting Software Architectures: Views and Beyond, Clements et al., 2010, p. 97 | Core J2EE Patterns: Best Practices and Design Strategies, Alur et al., 2001, p. 252
+
 ### 2. DAO MongoDB
 
 Créez une nouvelle DAO `UserDAOMongo` dans un fichier `dao/user_dao_mongo.py`.
