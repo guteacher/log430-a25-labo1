@@ -55,7 +55,8 @@ pip install -r requirements.txt
 ### 5. Lancez l’application
 
 ```bash
-python app.py
+cd src
+python main.py
 ```
 
 ---
@@ -95,7 +96,7 @@ CREATE TABLE IF NOT EXISTS products (
 );
 ```
 
-Créez un nouvel Model, View, Controller et DAO pour `Product`. Utilisez une structure similaire à `User`. Ajoutez les options `Montrer la liste d'items` et `Ajouter un item` dans `app.py`.
+Créez un nouvel Model, View, Controller et DAO pour `Product`. Utilisez une structure similaire à `User`. Ajoutez les options `Montrer la liste d'items` et `Ajouter un item` dans `main.py`.
 
 > 💡 Réfléchissez : si nous devions créer un système de magasin capable de faire la gestion d'achats des utilisateurs (Products et Users), comment structurerions-nous nos données dans MySQL par rapport à MongoDB ?
 
