@@ -3,20 +3,26 @@ Product DAO (Data Access Object)
 SPDX - License - Identifier: LGPL - 3.0 - or -later
 Auteurs : Gabriel C. Ullmann, Fabio Petrillo, 2025
 """
-
+import os
+from dotenv import load_dotenv
 import mysql.connector
 from models.user import User
 
 class ProductDAO:
     def __init__(self):
-        # NOTE: Normalement, les informations d'identification ne devraient pas être dans le code. Il s'agit d'une simplification.
-        self.conn = mysql.connector.connect(
-            host='localhost',
-            user='user',
-            password='pass',
-            database='mydb'
-        )
-        self.cursor = self.conn.cursor()
+        try:
+            load_dotenv(dotenv_path="../.env")
+            db_host = os.getenv("DB_HOST")
+            db_name = os.getenv("DB_NAME")
+            db_user = os.getenv("DB_USERNAME")
+            db_pass = os.getenv("DB_PASSWORD")     
+            print(db_host, db_pass)
+            self.conn = mysql.connector.connect(host=db_host, user=db_user, password=db_pass, database=db_name)   
+            self.cursor = self.conn.cursor()
+        except FileNotFoundError as e:
+            print("Attention : Veuillez créer un fichier .env")
+        except Exception as e:
+            print("Erreur : " + str(e))
 
     def select_all(self):
         pass
