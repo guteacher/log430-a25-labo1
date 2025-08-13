@@ -118,10 +118,7 @@ Si tous les tests passent ✅, vos implémentations sont correctes.
 
 ## 📦 Livrables
 
-- Fichier `.zip` contenant :
-  - l'ensemble du code source du projet Labo 01
-  - 5 diagrammes UML de l'application (use case, classes, sequence, activity, deployment)
-
+- Fichier `.zip` contenant l'ensemble du code source du projet Labo 01
 - Un **rapport en PDF** , contenant :
   - Une brève explication de votre structure MVC.
   - Une comparaison entre MySQL et MongoDB (avantages/inconvénients dans le contexte du projet).
