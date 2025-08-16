@@ -5,12 +5,12 @@ Auteurs : Gabriel C. Ullmann, Fabio Petrillo, 2025
 """
 
 class UserView:
+    @staticmethod
     def show_users(users):
-        print("Liste d'utilisateurs :")
-        for user in users:
-            print(f"{user.id}: {user.name} ({user.email})")
+        print("\n".join(f"{user.id}: {user.name} ({user.email})" for user in users))
 
+    @staticmethod
     def get_inputs():
-        name = input("Nom d'utilisateur : ")
-        email = input("Adresse courriel : ")
+        name = input("Nom d'utilisateur : ").strip()
+        email = input("Adresse courriel : ").strip()
         return name, email

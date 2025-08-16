@@ -52,10 +52,6 @@
         + get_inputs(): void
     }
 
-    class Application {
-        + run() : void
-    }
-
     UserDAO --> User
     UserController --> UserDAO
     UserController --> UserView
@@ -65,8 +61,5 @@
     ProductController --> ProductDAO
     ProductController --> ProductView
     ProductController --> Product
-
-    Application --> ProductController
-    Application --> UserController
     
 @enduml
