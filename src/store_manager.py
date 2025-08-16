@@ -8,7 +8,7 @@ from controllers.user_controller import UserController
 
 class Application:
     def run(self):
-        print("Appli example - Labo 01")
+        print("Application de Gestion de Magasin - Labo 01")
         print("=======================")
         controller = UserController()
 
