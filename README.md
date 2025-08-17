@@ -52,7 +52,7 @@ Complétez cette DAO en y ajoutant :
 
 > 💡 Question 1 : Quelles commandes avez-vous utilisées pour effectuer les opérations UPDATE et DELETE dans MySQL ? Avez-vous uniquement utilisé Python ou également du SQL ? Veuillez inclure le code pour illustrer votre réponse.
 
-### Remarque : types de DAO
+#### Remarque : types de DAO
 Il existe plusieurs manières d’implémenter une DAO. Par exemple, nous pourrions placer les opérations de base de données directement dans la classe Model. Dans notre cas, nous conservons la DAO et le Model séparés, comme décrit dans les ouvrages suivants : 
 - 📘 Documenting Software Architectures: Views and Beyond, Clements et al., 2010, p. 97.
 - 📕 Core J2EE Patterns: Best Practices and Design Strategies, Alur et al., 2001, p. 252.
