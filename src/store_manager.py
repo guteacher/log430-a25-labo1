@@ -7,6 +7,7 @@ Auteurs : Gabriel C. Ullmann, Fabio Petrillo, 2025
 from controllers.user_controller import UserController
 
 def show_main_menu():
+    """ Show menu with operation options which can be selected by the user """
     controller = UserController()
     while True:
         print("\n1. Montrer la liste d'utilisateurs\n2. Ajouter un utilisateur\n3. Quitter l'appli")

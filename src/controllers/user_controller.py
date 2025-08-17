@@ -13,13 +13,16 @@ class UserController:
         self.dao = UserDAO()
 
     def list_users(self):
+        """ List all users """
         users = self.dao.select_all()
         UserView.show_users(users)
 
     def create_user(self):
+        """ Create a new user based on user inputs """
         name, email = UserView.get_inputs()
         user = User(None, name, email)
         self.dao.insert(user)
 
     def shutdown(self):
+        """ Close database connection """
         self.dao.close()

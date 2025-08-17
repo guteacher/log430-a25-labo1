@@ -25,18 +25,23 @@ class ProductDAO:
             print("Erreur : " + str(e))
 
     def select_all(self):
+        """ Select all products from MySQL """
         pass
 
-    def insert(self, user):
+    def insert(self, product):
+        """ Insert given product into MySQL """
         pass
 
-    def update(self, user):
+    def update(self, product):
+        """ Update given product in MySQL """
         pass
 
-    def delete(self, user_id):
+    def delete(self, product_id):
+        """ Delete product from MySQL with given product ID """
         pass
 
-    def delete_all(self): #optionnel
+    def delete_all(self): #optional
+        """ Empty products table in MySQL """
         pass
         
     def close(self):
